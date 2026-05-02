@@ -1,0 +1,324 @@
+/* Tomurcuk Destek Sayfası — Tasarım Dili
+   ========================================
+   Renk paleti uygulamadaki AppColors token'larıyla uyumlu:
+   - primaryGreen tonları (Tomurcuk yeşili)
+   - soft pastel arka planlar
+   - generous whitespace
+   - SF Pro / Inter rounded tipografi (system fallback)
+*/
+
+:root {
+  --color-bg: #FAFAF7;
+  --color-bg-card: #FFFFFF;
+  --color-text-primary: #1C1C1E;
+  --color-text-secondary: #6E6E73;
+  --color-accent: #4A8B5C;
+  --color-accent-soft: #E8F1EA;
+  --color-border: #E5E5EA;
+  --color-link: #4A8B5C;
+  --color-link-hover: #2F6B41;
+
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: 64px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Display",
+    "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter",
+    "Helvetica Neue", Arial, sans-serif;
+
+  --max-width: 720px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1C1C1E;
+    --color-bg-card: #2C2C2E;
+    --color-text-primary: #F2F2F7;
+    --color-text-secondary: #AEAEB2;
+    --color-accent: #7CB89A;
+    --color-accent-soft: #2C3A30;
+    --color-border: #38383A;
+    --color-link: #7CB89A;
+    --color-link-hover: #A8D4BC;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--color-accent-soft) 0%, var(--color-bg) 100%);
+  padding: var(--space-xl) 0 var(--space-lg);
+  text-align: center;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+}
+
+.logo a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.tagline {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+/* Main */
+main {
+  padding: var(--space-lg) var(--space-md);
+}
+
+main.legal {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+}
+
+section {
+  margin-bottom: var(--space-lg);
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-primary);
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-primary);
+}
+
+p {
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-primary);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+ul {
+  margin: var(--space-sm) 0;
+  padding-left: var(--space-md);
+}
+
+li {
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-primary);
+}
+
+strong {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* FAQ */
+.faq details {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-sm);
+  transition: border-color 0.15s ease;
+}
+
+.faq details[open] {
+  border-color: var(--color-accent);
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-text-primary);
+  list-style: none;
+  position: relative;
+  padding-right: var(--space-md);
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--color-accent);
+  transition: transform 0.2s ease;
+}
+
+.faq details[open] summary::after {
+  content: "−";
+}
+
+.faq details p {
+  margin-top: var(--space-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Contact */
+.contact {
+  background: var(--color-accent-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: var(--space-xs);
+}
+
+.email {
+  font-size: 20px;
+  font-weight: 600;
+  margin: var(--space-sm) 0 var(--space-xs);
+}
+
+.response-time {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* Links */
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: var(--space-xs);
+}
+
+/* Legal Pages */
+.legal .meta {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.legal section {
+  margin-bottom: var(--space-md);
+}
+
+.legal h2 {
+  font-size: 22px;
+  margin-top: var(--space-lg);
+}
+
+.legal h2:first-of-type {
+  margin-top: 0;
+}
+
+.back-link {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: var(--color-bg-card);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-md) 0;
+  margin-top: var(--space-xl);
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+footer .disclaimer {
+  font-size: 12px;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 36px;
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .hero {
+    padding: var(--space-lg) 0 var(--space-md);
+  }
+
+  main {
+    padding: var(--space-md) var(--space-sm);
+  }
+}
