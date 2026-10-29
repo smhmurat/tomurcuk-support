@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tomurcuk uygulamasının gizlilik politikası. KVKK uyumlu, şeffaf veri kullanımı.">
+  <meta name="description" content="Tomurcuk uygulamasının gizlilik politikası ve KVKK aydınlatma metni.">
   <title>Tomurcuk — Gizlilik Politikası</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,259 +16,201 @@
   </header>
 
   <main class="container legal">
-    <p class="meta">Yürürlük tarihi: 30 Nisan 2026 &middot; Son güncelleme: 30 Nisan 2026</p>
+    <p class="meta">Yürürlük tarihi: 30 Nisan 2026 &middot; Son güncelleme: 29 Ekim 2026</p>
 
     <section>
       <h2>1. Giriş</h2>
       <p>
-        Bu Gizlilik Politikası, Tomurcuk uygulamasının ("Uygulama") kullanıcı
-        verilerini nasıl işlediğini açıklar. Tomurcuk, Semih Murat tarafından
-        Türkiye'deki ebeveynler için geliştirilmiş bir bebek takip
-        uygulamasıdır.
+        Bu Gizlilik Politikası, Tomurcuk uygulamasının ("Uygulama") verilerinizi
+        nasıl işlediğini açıklar. Tomurcuk, Semih Murat tarafından Türkiye'deki
+        ebeveynler için geliştirilmiş bir bebek takip uygulamasıdır.
       </p>
       <p>
-        Uygulamayı kullanarak bu politikada açıklanan veri işleme uygulamalarını
-        kabul etmiş olursunuz. Bu politika, 6698 sayılı Kişisel Verilerin
-        Korunması Kanunu (KVKK) ve Apple App Store gereksinimlerine uygun olarak
-        hazırlanmıştır.
+        Kısaca: Uygulamaya girdiğiniz tüm veriler <strong>yalnızca sizin
+        cihazınızda</strong> saklanır. Geliştirici bu verilere erişemez; Uygulama
+        hiçbir sunucuya veri göndermez, hesap oluşturmanızı istemez, reklam veya
+        analitik aracı kullanmaz.
+      </p>
+      <p>
+        Bu politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve
+        Apple App Store gereksinimleri dikkate alınarak hazırlanmıştır.
       </p>
     </section>
 
     <section>
       <h2>2. Veri Sorumlusu</h2>
       <p>
-        KVKK kapsamında veri sorumlusu Semih Murat'tır. İletişim için:
-        <a href="mailto:destek@tomurcuk.app">destek@tomurcuk.app</a>
-      </p>
-    </section>
-
-    <section>
-      <h2>3. Topladığımız Veriler</h2>
-
-      <h3>3.1. Cihazda Saklanan Veriler</h3>
-      <p>
-        Aşağıdaki veriler yalnızca cihazınızda yerel olarak saklanır ve
-        sunucularımıza gönderilmez:
-      </p>
-      <ul>
-        <li>Bebek profil bilgileri (ad, doğum tarihi, cinsiyet, prematüre durumu)</li>
-        <li>Beslenme kayıtları (emzirme süreleri, biberon miktarları, ek gıda kayıtları)</li>
-        <li>Uyku kayıtları (başlangıç/bitiş zamanı, gece/gündüz ayrımı)</li>
-        <li>Bez değişimi kayıtları</li>
-        <li>İlaç ve vitamin kayıtları</li>
-        <li>Aşı kayıtları</li>
-        <li>Doktor ziyareti kayıtları ve büyüme ölçümleri</li>
-        <li>Gelişim dönüm noktaları</li>
-        <li>Yapay zeka asistanı sohbet geçmişi (premium kullanıcılar)</li>
-      </ul>
-
-      <h3>3.2. iCloud Senkronizasyonu (Opsiyonel, Premium)</h3>
-      <p>
-        iCloud yedekleme özelliğini etkinleştirirseniz, yukarıdaki veriler
-        Apple'ın CloudKit altyapısı üzerinden Apple Kimliğinize bağlı özel
-        veritabanında şifreli olarak saklanır. Bu veriler:
-      </p>
-      <ul>
-        <li>Yalnızca sizin Apple Kimliğinizle erişilebilir</li>
-        <li>Apple tarafından uçtan uca şifrelenir</li>
-        <li>Tomurcuk geliştiricisi tarafından erişilemez</li>
-      </ul>
-
-      <h3>3.3. Apple Kimliği Bilgileri (Opsiyonel)</h3>
-      <p>
-        Apple ile Giriş Yap (Sign in with Apple) özelliğini kullanırsanız:
-      </p>
-      <ul>
-        <li>
-          Anonim Apple Kullanıcı Kimliği (kullanıcı tanımlayıcı dize) cihazınızda
-          saklanır
-        </li>
-        <li>E-posta adresi (Apple'ın gizli relay servisi olabilir) cihazınızda saklanır</li>
-        <li>Bu bilgiler yalnızca premium aboneliği yönetmek için kullanılır</li>
-      </ul>
-
-      <h3>3.4. Yapay Zeka Asistanı Verileri (Premium)</h3>
-      <p>
-        Premium kullanıcıların yapay zeka asistanına gönderdiği mesajlar, cihazın
-        iOS sürümüne bağlı olarak iki farklı şekilde işlenir:
-      </p>
-      <ul>
-        <li>
-          <strong>Apple Foundation Models (iOS 26.1+):</strong> Tüm işleme
-          cihazınızda yerel olarak gerçekleşir. Hiçbir veri cihazdan çıkmaz.
-        </li>
-        <li>
-          <strong>Google Gemini API (fallback):</strong> Apple Foundation Models
-          kullanılamadığında, mesajlarınız ve bebeğinizin ilgili takip verileri
-          (yaş, son beslenme zamanı vb.) Google'ın Gemini API'sine gönderilir.
-          Google'ın <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Kullanım Şartları</a>
-          ve <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Gizlilik Politikası</a> geçerlidir.
-          Google bu verileri model eğitimi için kullanmaz; yalnızca yanıt üretmek
-          için işler.
-        </li>
-      </ul>
-
-      <h3>3.5. Anonim Kullanım İstatistikleri</h3>
-      <p>
-        Uygulamayı geliştirmek için TelemetryDeck servisi üzerinden anonim
-        kullanım istatistikleri toplanır. Bu istatistikler:
-      </p>
-      <ul>
-        <li>Sizinle ilişkilendirilemez (kişisel kimlik bilgisi içermez)</li>
-        <li>Reklam veya pazarlama amacıyla kullanılmaz</li>
-        <li>Yalnızca özellik kullanım sıklığı ve hata raporları içerir</li>
-        <li>KVKK kapsamında anonim hale getirilmiş veridir</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>4. Verilerinizi Nasıl Kullanıyoruz</h2>
-      <p>Verilerinizi yalnızca aşağıdaki amaçlarla kullanırız:</p>
-      <ul>
-        <li>Uygulamanın temel işlevlerini sağlamak (bebek takibi, hatırlatmalar)</li>
-        <li>Premium aboneliğinizi yönetmek (yalnızca giriş yapmışsanız)</li>
-        <li>Yapay zeka asistanına bağlamsal yanıt üretmek (yalnızca premium kullanıcılar)</li>
-        <li>Uygulamanın stabilitesini ve performansını iyileştirmek (anonim istatistik)</li>
-      </ul>
-      <p>Verilerinizi <strong>asla</strong>:</p>
-      <ul>
-        <li>Üçüncü taraflara satmıyoruz</li>
-        <li>Reklam takibi için kullanmıyoruz</li>
-        <li>Pazarlama amacıyla işlemiyoruz</li>
-        <li>Sizden açık rıza almadan üçüncü taraflarla paylaşmıyoruz</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>5. Üçüncü Taraf Servisler</h2>
-      <p>Tomurcuk aşağıdaki üçüncü taraf servisleri kullanır:</p>
-      <ul>
-        <li>
-          <strong>Apple App Store:</strong> Premium abonelik işlemleri Apple
-          tarafından yönetilir. Apple'ın
-          <a href="https://www.apple.com/legal/privacy/tr/" target="_blank" rel="noopener">Gizlilik Politikası</a> geçerlidir.
-        </li>
-        <li>
-          <strong>Apple iCloud / CloudKit:</strong> Opsiyonel veri yedekleme
-          için kullanılır. Apple'ın gizlilik koşulları geçerlidir.
-        </li>
-        <li>
-          <strong>Apple Foundation Models:</strong> Cihaz üzerinde yapay zeka
-          işleme. Veriler cihazdan çıkmaz.
-        </li>
-        <li>
-          <strong>Google Gemini API:</strong> Yapay zeka fallback servisi.
-          Yalnızca premium kullanıcılar ve yalnızca Foundation Models
-          kullanılamadığında devreye girer.
-        </li>
-        <li>
-          <strong>TelemetryDeck:</strong> Anonim kullanım istatistikleri.
-          Kişisel veri içermez.
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>6. KVKK Kapsamındaki Haklarınız</h2>
-      <p>
-        6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 11. maddesi uyarınca
-        aşağıdaki haklara sahipsiniz:
-      </p>
-      <ul>
-        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
-        <li>İşlenen verilerinize erişme ve bilgi talep etme</li>
-        <li>İşleme amacını öğrenme ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
-        <li>Eksik veya yanlış işlenen verilerin düzeltilmesini isteme</li>
-        <li>Verilerin silinmesini veya yok edilmesini isteme</li>
-        <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme</li>
-        <li>Verilerin kanuna aykırı işlenmesi sebebiyle zarara uğramanız halinde zararın giderilmesini talep etme</li>
-      </ul>
-      <p>
-        Tomurcuk verilerinizi cihazınızda tuttuğu için bu hakları çoğunlukla
-        doğrudan uygulama içinden kullanabilirsiniz:
-      </p>
-      <ul>
-        <li><strong>Erişim:</strong> Tüm verilerinizi uygulama içinde görebilirsiniz</li>
-        <li>
-          <strong>Düzeltme:</strong> Tüm kayıtları uygulama içinden
-          düzenleyebilirsiniz
-        </li>
-        <li>
-          <strong>Silme:</strong> Bireysel kayıtları silmek için ilgili ekranda
-          sil seçeneğini kullanabilirsiniz. Tüm verilerinizi silmek için
-          <strong>Ayarlar &rarr; Veri Yönetimi &rarr; Tüm Verileri Sil</strong>
-          adımlarını izleyebilirsiniz.
-        </li>
-        <li>
-          <strong>Dışa aktarma:</strong> Premium kullanıcılar verilerini JSON
-          veya PDF formatında dışa aktarabilir
-          (<strong>Ayarlar &rarr; Veri Yönetimi</strong>).
-        </li>
-      </ul>
-      <p>
-        Ek talepleriniz için
-        <a href="mailto:destek@tomurcuk.app">destek@tomurcuk.app</a> adresine
-        yazılı başvuru yapabilirsiniz. Başvurularınıza KVKK'nın 13. maddesi
-        uyarınca en geç 30 gün içinde yanıt veririz.
-      </p>
-    </section>
-
-    <section>
-      <h2>7. Veri Saklama Süresi</h2>
-      <p>
-        Cihazınızda saklanan veriler, siz silene veya uygulamayı kaldırana kadar
-        cihazınızda kalır. Uygulamayı kaldırdığınızda iOS, ilgili tüm yerel
-        verileri otomatik olarak siler. iCloud'da yedeklenen veriler, iCloud
-        ayarlarınızdan manuel olarak silinene kadar Apple'ın altyapısında kalır.
-      </p>
-      <p>
-        TelemetryDeck anonim istatistik verileri, hizmet sağlayıcının
-        politikalarına uygun olarak sınırlı süre saklanır ve sizinle
-        ilişkilendirilemez.
-      </p>
-    </section>
-
-    <section>
-      <h2>8. Çocukların Gizliliği</h2>
-      <p>
-        Tomurcuk, ebeveynler tarafından bebeklerinin verilerini takip etmek için
-        kullanılır. Uygulamanın hedef kullanıcısı 18 yaş üstü ebeveynlerdir.
-        Bebeklerin verileri ebeveyn tarafından gönüllü olarak girilir ve
-        cihazda saklanır. Tomurcuk, çocuklardan doğrudan veri toplamaz.
-      </p>
-    </section>
-
-    <section>
-      <h2>9. Veri Güvenliği</h2>
-      <p>
-        Verilerinizin güvenliği için aşağıdaki önlemleri alıyoruz:
-      </p>
-      <ul>
-        <li>Veriler iOS'un yerel veritabanı (SwiftData) üzerinde saklanır ve sistem düzeyinde şifrelenir</li>
-        <li>iCloud senkronizasyonu Apple'ın uçtan uca şifreleme altyapısını kullanır</li>
-        <li>Yapay zeka isteği sırasında HTTPS bağlantısı kullanılır</li>
-        <li>Üçüncü taraf reklam veya tracking SDK'sı kullanılmaz</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>10. Politika Güncellemeleri</h2>
-      <p>
-        Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler
-        olması durumunda uygulama içinde bildirim göstereceğiz. Politikanın güncel
-        versiyonu her zaman bu sayfada yayınlanır.
-      </p>
-    </section>
-
-    <section>
-      <h2>11. İletişim</h2>
-      <p>
-        Bu Gizlilik Politikası ile ilgili sorularınız veya KVKK kapsamındaki
-        haklarınızı kullanmak için talepleriniz için bizimle iletişime
-        geçebilirsiniz:
+        KVKK kapsamında veri sorumlusu Semih Murat'tır. İletişim:
       </p>
       <p class="email">
-        <a href="mailto:destek@tomurcuk.app">destek@tomurcuk.app</a>
+        <a href="mailto:tomurcuk.destek@gmail.com">tomurcuk.destek@gmail.com</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Cihazınızda Saklanan Veriler</h2>
+      <p>
+        Aşağıdaki veriler yalnızca sizin tarafınızdan girilir ve yalnızca
+        cihazınızda yerel olarak saklanır:
+      </p>
+      <ul>
+        <li>Bebek profil bilgileri (ad, doğum tarihi, cinsiyet, doğum kilosu ve boyu, prematüre durumu)</li>
+        <li>Ebeveyn adı</li>
+        <li>Beslenme kayıtları (emzirme, biberon, ek gıda)</li>
+        <li>Uyku kayıtları</li>
+        <li>Bez değişimi kayıtları</li>
+        <li>Aşı kayıtları</li>
+        <li>Gelişim dönüm noktaları</li>
+        <li>Doktor ziyaretleri ve büyüme ölçümleri (boy, kilo, baş çevresi)</li>
+        <li>İlaç ve vitamin kayıtları</li>
+        <li>Uygulama ayarları ve bildirim tercihleri</li>
+      </ul>
+      <p>
+        Bu veriler sağlık verisi niteliği taşıyabilir. Hiçbiri geliştiriciye,
+        bir sunucuya veya üçüncü bir tarafa gönderilmez. Uygulamanın temel
+        işlevleri internet bağlantısı olmadan çalışır.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Toplamadığımız Veriler</h2>
+      <ul>
+        <li>Kullanıcı hesabı oluşturulmaz; ad, e-posta veya telefon numarası istenmez</li>
+        <li>Konum, kişiler, fotoğraflar veya mikrofon gibi cihaz verilerine erişilmez</li>
+        <li>Analitik, kullanım istatistiği veya hata raporlama aracı kullanılmaz</li>
+        <li>Reklam gösterilmez; reklam veya takip (tracking) aracı kullanılmaz</li>
+        <li>Verileriniz satılmaz, kiralanmaz ve hiçbir üçüncü tarafla paylaşılmaz</li>
+      </ul>
+      <p>
+        Not: iPhone ayarlarınızda "Geliştiricilerle Paylaş" seçeneğini
+        açtıysanız, Apple uygulama çökme raporlarını kişisel kimlik bilgisi
+        içermeyecek şekilde geliştiriciyle paylaşabilir. Bu tercih tamamen
+        sizin kontrolünüzdedir ve Apple'ın gizlilik koşullarına tabidir.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Bildirimler</h2>
+      <p>
+        Aşı hatırlatmaları, doktor randevusu hatırlatmaları ve uyku penceresi
+        hatırlatmaları gibi bildirimler iOS tarafından cihazınızda yerel olarak
+        planlanır. Bildirim içerikleri herhangi bir sunucuya gönderilmez.
+        Bildirimleri dilediğiniz zaman Uygulama içinden veya iPhone
+        Ayarlar'ından kapatabilirsiniz.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Premium Abonelik ve Ödemeler</h2>
+      <p>
+        Premium abonelik satın alma, yenileme ve iptal işlemleri tamamen Apple
+        App Store tarafından yürütülür. Geliştirici kredi kartı veya ödeme
+        bilgilerinizi görmez ve saklamaz. Uygulama, abonelik durumunuzu yalnızca
+        cihaz üzerinde Apple'ın StoreKit altyapısı aracılığıyla doğrular.
+      </p>
+      <p>
+        Ödeme işlemlerinde
+        <a href="https://www.apple.com/tr/legal/privacy/" target="_blank" rel="noopener">Apple Gizlilik Politikası</a>
+        geçerlidir.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Dışa Aktarma ve Paylaşım</h2>
+      <p>
+        Verilerinizi JSON dosyası veya PDF doktor raporu olarak dışa
+        aktarabilirsiniz. Bu dosyalar cihazınızda oluşturulur ve yalnızca siz
+        paylaşmayı seçerseniz, seçtiğiniz uygulama veya kişiyle paylaşılır.
+        Paylaştığınız dosya, alıcı uygulamanın veya hizmetin gizlilik
+        koşullarına tabi olur.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Yurt Dışına Aktarım</h2>
+      <p>
+        Geliştirici, kişisel verilerinizi Türkiye dışına veya herhangi bir
+        yere aktarmaz; çünkü verileriniz cihazınızdan çıkmaz.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Veri Saklama ve Yedekleme</h2>
+      <p>
+        Verileriniz, siz silene veya Uygulamayı kaldırana kadar cihazınızda
+        kalır. Uygulamayı kaldırdığınızda iOS Uygulamaya ait tüm verileri
+        siler.
+      </p>
+      <p>
+        iPhone'unuzun iCloud Yedekleme veya bilgisayar yedeklemesi özelliği
+        açıksa, Uygulama verileri cihazınızın genel yedeğine dahil edilebilir.
+        Bu yedekleme Apple tarafından, sizin cihaz ayarlarınıza göre yapılır;
+        geliştirici bu yedeklere erişemez.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. KVKK Kapsamındaki Haklarınız</h2>
+      <p>
+        KVKK'nın 11. maddesi uyarınca; kişisel verilerinizin işlenip
+        işlenmediğini öğrenme, bilgi talep etme, işleme amacını öğrenme,
+        eksik veya yanlış verilerin düzeltilmesini ve verilerin silinmesini
+        isteme, otomatik analiz sonucu aleyhinize bir sonuca itiraz etme ve
+        kanuna aykırı işleme nedeniyle uğradığınız zararın giderilmesini talep
+        etme haklarına sahipsiniz.
+      </p>
+      <p>
+        Verileriniz cihazınızda tutulduğu için bu hakları çoğunlukla doğrudan
+        Uygulama içinden kullanabilirsiniz:
+      </p>
+      <ul>
+        <li><strong>Erişim ve düzeltme:</strong> Tüm kayıtlarınızı Uygulama içinde görebilir ve düzenleyebilirsiniz.</li>
+        <li><strong>Silme:</strong> Kayıtları tek tek silebilir veya <strong>Ayarlar &rarr; Veri &rarr; Tüm Verileri Sil</strong> ile tüm verilerinizi kalıcı olarak silebilirsiniz.</li>
+        <li><strong>Kopya alma:</strong> <strong>Ayarlar &rarr; Veri &rarr; Verileri Dışarı Aktar</strong> ile verilerinizin kopyasını alabilirsiniz.</li>
+      </ul>
+      <p>
+        Diğer talepleriniz için yukarıdaki e-posta adresine yazabilirsiniz.
+        Başvurularınız KVKK'nın 13. maddesi uyarınca en geç 30 gün içinde
+        yanıtlanır.
+      </p>
+    </section>
+
+    <section>
+      <h2>11. Çocukların Gizliliği</h2>
+      <p>
+        Tomurcuk, ebeveynlerin bebeklerine ait bilgileri takip etmesi için
+        tasarlanmıştır ve hedef kullanıcısı 18 yaş üstü ebeveynlerdir.
+        Bebeğe ait bilgiler ebeveyn tarafından girilir ve yalnızca cihazda
+        saklanır. Uygulama çocuklardan doğrudan veri toplamaz.
+      </p>
+    </section>
+
+    <section>
+      <h2>12. Veri Güvenliği</h2>
+      <ul>
+        <li>Veriler, iOS'un cihaz düzeyindeki şifreleme ve veri koruma altyapısıyla korunan yerel bir veritabanında (SwiftData) saklanır.</li>
+        <li>Uygulama, verilerinizi herhangi bir ağ üzerinden göndermez.</li>
+        <li>Cihazınıza ekran kilidi (parola, Face ID veya Touch ID) koymanız verilerinizin güvenliğini artırır.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>13. Politika Güncellemeleri</h2>
+      <p>
+        Bu Gizlilik Politikası zaman zaman güncellenebilir. Güncel sürüm her
+        zaman bu sayfada yayınlanır ve sayfanın başındaki "Son güncelleme"
+        tarihi değiştirilir.
+      </p>
+    </section>
+
+    <section>
+      <h2>14. İletişim</h2>
+      <p>
+        Bu Gizlilik Politikası hakkındaki sorularınız veya KVKK kapsamındaki
+        talepleriniz için:
+      </p>
+      <p class="email">
+        <a href="mailto:tomurcuk.destek@gmail.com">tomurcuk.destek@gmail.com</a>
       </p>
     </section>
 
